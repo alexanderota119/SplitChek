@@ -3,6 +3,7 @@ const baseColor = {
   black: { regular: "#000000", 100: "#140A01" },
   gray: {
     regular: "#A28888",
+    product: "#ABB1BB",
     100: "#fAfAfA",
     200: "#F8F8F8",
     300: "#f4f4f4",

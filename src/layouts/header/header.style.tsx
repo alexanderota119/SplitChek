@@ -5,6 +5,24 @@ export const HeaderWrapper = styled.header`
   background: white;
 `;
 
+export const HeaderContainer = styled.div`
+  width: 100%;
+  & .desktop {
+    display: block;
+  }
+  & .mobile {
+    display: none;
+  }
+  @media screen and (max-width: 768px) {
+    & .desktop {
+      display: none;
+    }
+    & .mobile {
+      display: block;
+    }
+  }
+`;
+
 export const HeaderInner = styled.div`
   display: flex;
   justify-content: space-between;

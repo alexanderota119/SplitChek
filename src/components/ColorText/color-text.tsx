@@ -8,24 +8,24 @@ type Props = {
   rest?: string;
 };
 type TextProps = {
-  color: string;
+  colorData: string;
   rest: string;
 };
-// const TempText = styled.span<TextProps>`
-//   color: ${themeGet(`colors.${(props) => props.color}`)};
-//   ${(props) => props.rest}
-// `;
+const TempText = styled.span<TextProps>`
+  color: ${(props) => themeGet(`colors.${props.colorData}`)};
+  ${(props) => props.rest}
+`;
 
 const ColorText: React.FC<Props> = ({
   children,
   color = "orange.regular",
   rest,
 }) => {
-  const TempText = styled.span`
-    color: ${themeGet(`colors.${color}`)};
-    ${rest}
-  `;
-  return <TempText>{children}</TempText>;
+  return (
+    <TempText colorData={color} rest={rest}>
+      {children}
+    </TempText>
+  );
 };
 
 export default ColorText;

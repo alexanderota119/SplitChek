@@ -9,6 +9,9 @@ import PageLoader from "components/Loader/page-loader";
 
 // External CSS import here
 import "bootstrap/dist/css/bootstrap.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import { GlobalStyle } from "site-settings/site-style/global.style";
 
 // Language translation messages

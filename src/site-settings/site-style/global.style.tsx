@@ -65,9 +65,9 @@ export const GlobalStyle = createGlobalStyle(({ theme }) =>
     h5: {
       fontFamily: "base",
       fontSize: "mm",
-      fontWeight: "regular",
+      fontWeight: "bold",
       zIndex: 10,
-      margin: 0,
+      marginBottom: "14px",
     },
     h6: {
       fontFamily: "base",
@@ -139,14 +139,15 @@ export const GlobalStyle = createGlobalStyle(({ theme }) =>
       zIndex: "10",
     },
     ".container": {
-      padding: "0 98px",
+      paddingLeft: "98px",
+      paddingRight: "95px",
       margin: "0 auto",
       maxWidth: "none",
       "@media screen and (max-width: 768px)": {
-        padding: "0 55px",
+        padding: "20px 55px",
       },
       "@media screen and (max-width: 480px)": {
-        padding: "0 15px",
+        padding: "11px 15px",
       },
     },
     ".circle": {

@@ -20,7 +20,6 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
       </MoblieSidebar> */}
       <Header />
       {children}
-      <Footer />
     </LayoutWrapper>
   );
 };

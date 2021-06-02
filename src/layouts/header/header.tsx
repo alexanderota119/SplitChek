@@ -2,32 +2,44 @@ import React from "react";
 import {
   HeaderWrapper,
   HeaderInner,
-  HeaderInnerBurger,
   HeaderInnerLogo,
+  HeaderContainer,
 } from "./header.style";
 import LogoImage from "components/LogoImage/logo-image";
-import Buger from "components/Burger/burger";
 import Logo from "assets/images/layout/header/Logo.svg";
 import Container from "components/Container/container";
-import { Button } from "components/Button/button";
+import SearchInput from "components/SearchInput";
 import DesktopMenu from "./menu/menu";
+import MobileMenu from "./menu/moblie-menu";
 
 const Header: React.FC = () => {
   return (
     <HeaderWrapper>
       <Container>
-        <HeaderInner>
-          <HeaderInnerBurger>
-            <Buger />
-          </HeaderInnerBurger>
-          <HeaderInnerLogo>
-            <LogoImage imageUrl={Logo} alt="split chek" />
-          </HeaderInnerLogo>
-          <DesktopMenu />
-          <Button variant="blue" size="small">
-            Log In
-          </Button>
-        </HeaderInner>
+        <HeaderContainer>
+          <div className="desktop">
+            <HeaderInner>
+              <HeaderInnerLogo>
+                <LogoImage imageUrl={Logo} alt="split chek" />
+              </HeaderInnerLogo>
+              <p
+                style={{
+                  color: "#36558F",
+                  fontSize: "14px",
+                  fontWeight: "bold",
+                  marginLeft: "18px",
+                }}
+              >
+                EN
+              </p>
+              <SearchInput />
+              <DesktopMenu />
+            </HeaderInner>
+          </div>
+          <div className="mobile">
+            <MobileMenu />
+          </div>
+        </HeaderContainer>
       </Container>
     </HeaderWrapper>
   );

@@ -24,6 +24,10 @@ const SplictCheck = styled.span`
   @media screen and (max-width: 768px) {
     font-size: ${themeGet("fontSizes.mm", "18")}px;
   }
+  & img {
+    width: 26px;
+    height: 25px;
+  }
 `;
 const BussinessCheck = styled.span`
   &.active {
