@@ -23,6 +23,13 @@ export const HeaderContainer = styled.div`
   }
 `;
 
+export const LanguageContainer = styled.div`
+  margin-right: 71px;
+  @media screen and (max-width: 950px) {
+    margin-right: 20px;
+  }
+`;
+
 export const HeaderInner = styled.div`
   display: flex;
   justify-content: space-between;
@@ -36,6 +43,7 @@ export const HeaderInner = styled.div`
 `;
 
 export const HeaderInnerLogo = styled.div`
+  margin-right: 18px;
   @media screen and (max-width: 320px) {
     width: 50%;
   }

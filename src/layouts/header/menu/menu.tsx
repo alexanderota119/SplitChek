@@ -2,11 +2,34 @@ import React from "react";
 import { MenuNav } from "./menu.style";
 import AvatarImage from "components/Avatar/";
 import LinkItem from "components/LinkItem/link-item";
+import HeaderIcon from "components/HeaderIcon";
 
 import home from "assets/images/layout/header/home.svg";
-import store from "assets/images/layout/header/store.svg";
+import activeHome from "assets/images/layout/header/activeHome.svg";
+
 import tip from "assets/images/layout/header/tip.svg";
+import tipActive from "assets/images/layout/header/tipActive.svg";
+
+import store from "assets/images/layout/header/store.svg";
+import storeActive from "assets/images/layout/header/storeActive.svg";
+
 import Ellipse from "assets/images/layout/header/Ellipse135.png";
+
+import Dropdown from "components/Dropdown/";
+
+const pricetype = [
+  {
+    id: "USD",
+    label: "USD",
+  },
+  {
+    id: "EUR",
+    label: "EUR",
+  },
+];
+const clickHandle = (val) => {
+  console.log(val);
+};
 
 const DesktopMenu: React.FC = () => {
   return (
@@ -15,43 +38,30 @@ const DesktopMenu: React.FC = () => {
         <ul>
           <li>
             <LinkItem href="/">
-              <img
-                src={home}
-                alt=""
-                style={{ maxWidth: "26px", maxHeight: "25px" }}
-              />
+              <HeaderIcon noneSrc={home} activeSrc={activeHome}></HeaderIcon>
             </LinkItem>
           </li>
 
           <li>
             <LinkItem href="/">
-              <img
-                src={tip}
-                alt=""
-                style={{ maxWidth: "26px", maxHeight: "25px" }}
-              />
+              <HeaderIcon noneSrc={tip} activeSrc={tipActive}></HeaderIcon>
             </LinkItem>
           </li>
           <li>
             <LinkItem href="/">
-              <img
-                src={store}
-                alt=""
-                style={{ maxWidth: "26px", maxHeight: "25px" }}
-              />
+              <HeaderIcon noneSrc={store} activeSrc={storeActive}></HeaderIcon>
             </LinkItem>
           </li>
           <li>
-            <p
+            <div
               style={{
                 color: "#36558F",
                 fontSize: "14px",
                 fontWeight: "bold",
-                marginRight: "18px",
               }}
             >
-              USD
-            </p>
+              <Dropdown list={pricetype} click={clickHandle} />
+            </div>
           </li>
           <li>
             <AvatarImage src={Ellipse}></AvatarImage>

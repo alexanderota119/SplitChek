@@ -22,6 +22,9 @@ const CarsouleCellArea = styled.div`
     height: 150px;
     padding: 10px 10px 10px 10px;
   }
+  @media screen and (max-width: 768px) {
+    margin-right: 8px;
+  }
 `;
 
 const CarsouleImage = styled.div`
@@ -37,6 +40,12 @@ const CarsouleImage = styled.div`
 
 const Carsoulebutton = styled.div`
   margin: 0 auto;
+  & Button {
+    padding: 9px;
+    width: auto;
+    height: 35px;
+    font-size: 12px;
+  }
 `;
 
 const CarsouelCell: React.FC<Props> = ({ src, title }) => {

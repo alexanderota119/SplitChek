@@ -10,6 +10,10 @@ export const LogoBox = styled.span<LogoBoxProps>`
   alignitems: center;
   min-width: 123px;
   min-height: 22px;
+  @media screen and (max-width: 768px) {
+    min-width: 35px;
+    min-height: 30px;
+  }
   justify-content: ${(props) => props.align || "center"};
 `;
 

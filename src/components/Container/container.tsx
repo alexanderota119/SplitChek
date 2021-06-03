@@ -4,11 +4,7 @@ type Props = {
 };
 
 const Container: React.FC<Props> = ({ children }) => {
-  return (
-    <div className="wrapper">
-      <div className="container">{children}</div>
-    </div>
-  );
+  return <div className="container">{children}</div>;
 };
 
 export default Container;

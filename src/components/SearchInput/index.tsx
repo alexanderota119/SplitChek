@@ -1,44 +1,70 @@
 import React from "react";
 import styled from "styled-components";
 import search from "assets/images/layout/header/search.svg";
+import { BiSearch } from "react-icons/bi";
 type Props = {};
 
 const SearchContainer = styled.div`
   position: relative;
-  width: 586px;
-  margin-left: 71px;
+  width: 100%;
+  margin-right: 26px;
   @media screen and (max-width: 768px) {
-    margin-left: 15px;
+    margin-right: 15px;
   }
 `;
 const Searchflex = styled.div`
   white-space: nowrap;
   display: flex;
+  flex: 1;
   background: #f1f1f1;
   border-radius: 16px;
-  & input {
+  border: 1px solid white;
+  & :active {
+    border: 1px solid #abb1bb;
+  }
+  justify-content: space-between;
+
+  & .desktop {
     background: none;
     font-size: 16px;
-    letterspacing: 0px;
+    letter-spacing: 0px;
     border: none;
     outline: unset;
-    max-width: 586px;
     height: 50px;
     padding-left: 24px;
     padding-top: 15x;
-    @media screen and (max-width: 768px) {
-      padding-left: 19px;
-      width: 200px;
-    }
   }
-  & span {
-    padding-right: 15.9px;
+  & .mobile {
+    max-width: 100px;
+    display: none;
+    background: none;
+    font-size: 16px;
+    letter-spacing: 0px;
+    border: none;
+    outline: unset;
+    height: 50px;
+    padding-left: 2px;
+    padding-top: 2px;
+  }
+  & .search {
+    padding-right: 5px;
     padding-top: 15px;
     padding-bottom: 15px;
-    margin-left: auto;
-    & img {
-      width: 18.86px;
-      height: 19.91px;
+    color: #36558f;
+    & :hover {
+      cursor: pointer;
+      color: orange;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-left: 19px;
+    width: 100%;
+    & .mobile {
+      display: block;
+    }
+    & .desktop {
+      display: none;
     }
   }
 `;
@@ -47,9 +73,10 @@ const SearchInput: React.FC<Props> = () => {
   return (
     <SearchContainer>
       <Searchflex>
-        <input placeholder="Search for something" />
-        <span>
-          <img src={search} />
+        <input className="desktop" placeholder="Search for something"></input>
+        <input className="mobile" placeholder="Search" />
+        <span className="search">
+          <BiSearch fontSize="26px"></BiSearch>
         </span>
       </Searchflex>
     </SearchContainer>

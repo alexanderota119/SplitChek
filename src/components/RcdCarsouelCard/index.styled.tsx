@@ -7,8 +7,11 @@ export const CardWrapper = styled.div`
   background: #ffffff;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
-  padding: 29px 24px;
-  margin: 20px;
+  padding: 26px 19px;
+  margin: 15px;
+  @media screen and (max-width: 320px) {
+    margin: 5px;
+  }
 `;
 
 export const CardContainer = styled.div`
@@ -39,6 +42,9 @@ export const ProductImageContainer = styled.div`
 
 export const AuthorContainer = styled.div`
   width: 100%;
+  & span {
+    font-size: 14px !important;
+  }
 `;
 
 export const DescriptionContainer = styled.div`

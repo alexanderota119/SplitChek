@@ -9,6 +9,9 @@ export const MenuNav = styled.div`
     justify-content: space-between;
     & li {
       margin-left: 27px;
+      @media screen and (max-width: 950px) {
+        margin-left: 10px;
+      }
     }
   }
 `;

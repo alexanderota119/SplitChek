@@ -75,7 +75,6 @@ export const DescriptionButtons = styled.div`
   & Button {
     width: 114px;
     height: 26px;
-    padding: 6px;
     font-size: 11px;
     margin-right: 4px;
     margin-top: 6px;

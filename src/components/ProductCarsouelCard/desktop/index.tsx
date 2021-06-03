@@ -7,6 +7,7 @@ import commentImage from "assets/images/home/image14.png";
 import badge1 from "assets/images/home/ellipse136.png";
 import badge2 from "assets/images/home/ellipse137.png";
 import * as Plane from "./index.styled";
+
 type Props = {
   list;
 };
@@ -24,7 +25,7 @@ const ProductCarsouelCard: React.FC<Props> = ({ list }) => {
       <Plane.LeftContainer>
         <Plane.ProductionContainer>
           <Plane.CarsouelContainer>
-            <CustomSlider settings={settings}>
+            <CustomSlider settings={settings} arrowPosition="-10px">
               {list.data.map((item, key) => {
                 return (
                   <div className="imgArea" key={key}>

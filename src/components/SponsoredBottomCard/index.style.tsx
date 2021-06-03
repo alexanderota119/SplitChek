@@ -1,28 +1,33 @@
 import styled from "styled-components";
 
-export const CardContainer = styled.div`
-  width: 381px;
+export const CardWrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 25px 23px 28px 27px;
+  justify-content: center;
   background: #ffffff;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
-  margin-bottom: 5px;
+  padding: 26px 15px;
+  margin: 15px;
+`;
+
+export const CardContainer = styled.div`
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const ProductContainer = styled.div`
   display: flex;
   flex-direction: row;
-  height: 107px;
   margin-bottom: 25px;
 `;
 
 export const ImageContainer = styled.div`
   min-width: 103px;
   min-height: 107px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   & img {
     width: 103px;
     height: 107px;
@@ -32,20 +37,24 @@ export const ImageContainer = styled.div`
 export const TitleContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex: 1;
 
-  & span {
+  & h5 {
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
     color: #140a01;
+    margin-bottom: 15px;
   }
+
   & p {
-    font-weight: bold;
-    font-size: 30px;
+    font-weight: bold !important;
+    font-size: 30px !important;
     line-height: 37px;
     color: #140a01;
+    margin-bottom: 14px;
   }
+
   & span {
     font-weight: normal;
     font-size: 12px;
@@ -68,8 +77,10 @@ export const FooterContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   & Button {
+    font-size: 18px;
     width: 139.5px;
     height: 43px;
+    padding: 9px;
   }
 `;
 
@@ -81,13 +92,13 @@ export const BadgeContainer = styled.div`
     align-items: center;
     & .imgSection1 {
       & img {
-        width: 25px;
+        min-width: 25px;
         height: 25px;
       }
     }
     & .imageSection2 {
       & img {
-        width: 38px;
+        min-width: 38px;
         height: 38px;
       }
     }

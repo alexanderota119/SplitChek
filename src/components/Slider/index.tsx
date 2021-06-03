@@ -1,9 +1,13 @@
-import styled from "styled-components";
 import Slider from "react-slick";
-
-const CustomSlider = ({ settings, children }) => {
+import NextArrow from "./NextArrow";
+import PrevArrow from "./PrevArrow";
+const CustomSlider = ({ settings, arrowPosition, children }) => {
   return (
-    <Slider {...settings} arrows={false}>
+    <Slider
+      {...settings}
+      nextArrow={<NextArrow arrowPosition={arrowPosition} />}
+      prevArrow={<PrevArrow arrowPosition={arrowPosition} />}
+    >
       {children}
     </Slider>
   );

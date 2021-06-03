@@ -5,6 +5,9 @@ export const SponsoredCardWrapper = styled.div`
     padding: 0 20px;
     width: 50%;
   }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const SponsoredSectionArea = styled.div`
@@ -16,6 +19,14 @@ export const SponsoredSectionArea = styled.div`
   border-radius: 30px;
   padding: 25px 20px 31px 24px;
   margin-bottom: 20px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 25px 50px;
+  }
+  @media screen and (max-width: 460px) {
+    width: 100%;
+    padding: 25px 20px 31px;
+  }
 `;
 
 export const SponsoredHeader = styled.div`
@@ -29,15 +40,15 @@ export const SponsoredHeader = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    & .imgSection1 {
+    & .imageSection1 {
       & img {
-        width: 25px;
+        min-width: 25px;
         height: 25px;
       }
     }
     & .imageSection2 {
       & img {
-        width: 38px;
+        min-width: 38px;
         height: 38px;
       }
     }
@@ -51,9 +62,11 @@ export const SponsoredProduct = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 14px;
+
   & img {
     min-width: 101px;
     max-height: 131px;
+    margin-right: 15px;
   }
 `;
 
@@ -97,9 +110,9 @@ export const SponsoredButtonGroup = styled.div`
   flex-wrap: wrap;
   margin-bottom: 15px;
   & Button {
-    width: 114px;
+    width: auto;
     height: 26px;
-    padding: 6px;
+    padding: 9px;
     font-size: 11px;
     margin-right: 4px;
     margin-top: 6px;

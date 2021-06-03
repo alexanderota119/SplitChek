@@ -8,6 +8,10 @@ export const SponsoredSectionArea = styled.div`
   @media screen and (max-width: 1399px) {
     width: 100%;
   }
+  @media screen and (max-width: 768px) {
+    padding-top: 25px;
+    margin-bottom: 44px;
+  }
 
   & h2 {
     font-weight: bold;
