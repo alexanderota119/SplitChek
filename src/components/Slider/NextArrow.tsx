@@ -21,9 +21,11 @@ const ArrowContainer = styled.div<ArrowPosition>`
 
   &:hover {
     transform: scale(1.1);
+    background-color: orange;
   }
   &:active {
     transform: scale(0.9);
+    background-color: orange;
   }
 `;
 const NextArrow = (props) => {
