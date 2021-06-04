@@ -5,14 +5,34 @@ import {
   AvatarContainer,
   SearchContainer,
   LogoContainer,
+  LanguageContainer,
 } from "./moblie-menu.style";
 import LogoImage from "components/LogoImage/logo-image";
 import logoMobile from "assets/images/layout/header/logo-mobile.svg";
 import avatar from "assets/images/layout/header/Ellipse135.png";
-import SearchInput from "components/SearchInput";
+import CollapseSeach from "components/CollapseSearchBar";
 import AvatarImage from "components/Avatar/";
+import DropDown from "components/Dropdown";
+import { useLocale } from "contexts/location/location.provider";
+import SearchInput from "components/SearchInput";
+
+const languageType = [
+  {
+    id: "en",
+    label: "EN",
+  },
+  {
+    id: "de",
+    label: "DE",
+  },
+];
+const hadleDropDown = (val) => {};
 
 const MobileMenu: React.FC = () => {
+  const { locale, changeLocation } = useLocale();
+  const clickHandle = (item) => {
+    changeLocation(item.id);
+  };
   return (
     <MenuDiv>
       <LogoDiv>
@@ -23,9 +43,20 @@ const MobileMenu: React.FC = () => {
             align="left"
           ></LogoImage>
         </LogoContainer>
-
+        <LanguageContainer>
+          <DropDown
+            list={languageType}
+            click={clickHandle}
+            type="desktop"
+          ></DropDown>
+        </LanguageContainer>
         <SearchContainer>
-          <SearchInput />
+          <div className="search-tablet">
+            <SearchInput />
+          </div>
+          <div className="search-mobile">
+            <CollapseSeach />
+          </div>
         </SearchContainer>
         <AvatarContainer>
           <AvatarImage src={avatar}></AvatarImage>

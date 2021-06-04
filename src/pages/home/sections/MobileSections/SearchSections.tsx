@@ -7,7 +7,7 @@ import {
 import MobileProductCard from "components/ProductCard/mobile/index";
 import MobileCarsouelCard from "components/ProductCarsouelCard/mobile/index";
 import MobileRcdProduct from "components/RcdProductCard/mobile/index";
-import { FormattedMessage } from "react-intl";
+
 import { data } from "data/home/mobile/SearchSection";
 
 const settings = {
@@ -20,9 +20,6 @@ const settings = {
 const SearchSection = () => {
   return (
     <SearchContainer>
-      <h3>
-        <FormattedMessage id="searchresult" />
-      </h3>
       <CardContainer>
         {data.map((item, key) => {
           {

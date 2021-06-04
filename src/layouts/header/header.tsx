@@ -13,7 +13,7 @@ import SearchInput from "components/SearchInput";
 import DesktopMenu from "./menu/menu";
 import MobileMenu from "./menu/moblie-menu";
 import DropDown from "components/Dropdown";
-import { useLocale } from "../../contexts/location/location.provider";
+import { useLocale } from "contexts/location/location.provider";
 
 const languageType = [
   {
@@ -27,9 +27,9 @@ const languageType = [
 ];
 
 const Header: React.FC = () => {
-  const { locale, changeLanguage } = useLocale();
+  const { locale, changeLocation } = useLocale();
   const clickHandle = (item) => {
-    // changeLanguage(item.id);
+    changeLocation(item.id);
   };
   return (
     <HeaderWrapper>

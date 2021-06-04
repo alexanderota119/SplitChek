@@ -1,9 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 
-const StyledDropDown = styled.div`
+type StyledDropDownContainerProps = {
+  type: string;
+};
+
+const StyledDropDown = styled.div<StyledDropDownContainerProps>`
   position: relative;
-  width: auto;
+  width: ${({ type }) => (type == "desktop" ? "auto" : "35px")};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,13 +24,23 @@ const StyledDropDownDiv = styled.div<StyledDropDownProps>`
   z-index: 9999;
   color: white;
   padding: 16px 0;
-  left: -10px;
-  top: ${({ type }) => (type == "mobile" ? "-50px" : "10px")};
   position: absolute;
   display: ${({ hide }) => (hide ? "block" : "none")};
+  left: ${({ type }) => (type == "desktop" ? "0px" : "-20px")};
+  top: ${({ type }) => (type == "desktop" ? "10px" : "-60px")};
+  box-shadow:  ${({ type }) =>
+    type == "desktop" ? "none" : "0px 0px 20px rgba(0, 0, 0, 0.1);"}
+  background: ${({ type }) => (type == "desktop" ? "transparent" : "white")};
+  border-radius:${({ type }) => (type == "desktop" ? "0" : "10px")};
+  border: ${({ type }) =>
+    type == "desktop" ? "none" : "rgba(255, 255, 255, 0.5)"};
   overflow: auto;
 `;
-const StyledDropDownHeader = styled.div`
+
+type StyledDropDownHeaderProps = {
+  type: string;
+};
+const StyledDropDownHeader = styled.div<StyledDropDownHeaderProps>`
   cursor: pointer;
   span {
     color: #36558f;
@@ -58,7 +72,9 @@ const StyledDropDownHeader = styled.div`
     height: 10px;
     width: 10px;
     top: 10px;
-    right: -15px;
+
+    right: ${({ type }) => (type == "desktop" ? "-15px" : "-10px")};
+
     transition: border-color 0.15s ease-in-out;
   }
 
@@ -66,7 +82,7 @@ const StyledDropDownHeader = styled.div`
   }
 `;
 type StyledProps = {
-  isSelect: boolean;
+  type: string;
 };
 
 const StyledDropDownItemDiv = styled.div<StyledProps>`
@@ -75,15 +91,13 @@ const StyledDropDownItemDiv = styled.div<StyledProps>`
   font-weight: bold;
   display: flex;
   align-items: center;
-
-  background: #ffffff;
-  border-radius: 10px;
-  border: rgba(255, 255, 255, 0.5);
-  width: 70px;
   height: 30px;
-  justify-content: center;
+  justify-content: ${({ type }) =>
+    type == "desktop" ? "space-between;" : "center"};
   cursor: pointer;
   color: #36558f;
+  width: ${({ type }) => (type == "desktop" ? "auto" : "80px")};
+
   img {
     height: 28px;
     margin-right: 12px;
@@ -130,16 +144,17 @@ const Dropdown = ({ list, click, type = "desktop" }) => {
   }, [hide]);
 
   return (
-    <StyledDropDown>
-      <StyledDropDownHeader onClick={() => setHide(!hide)}>
+    <StyledDropDown type={type}>
+      <StyledDropDownHeader type={type} onClick={() => setHide(!hide)}>
         <span>{current.label}</span>
       </StyledDropDownHeader>
       <StyledDropDownDiv ref={dropMenuRef} hide={hide} type={type}>
         {list.map((item, index) => {
           return (
             <StyledDropDownItemDiv
-              isSelect={current.id === item.id}
+              //isSelect={current.id === item.id}
               key={`__key-${index.toString()}`}
+              type={type}
               onClick={() => {
                 setHide(false);
                 setCurrent(item);
