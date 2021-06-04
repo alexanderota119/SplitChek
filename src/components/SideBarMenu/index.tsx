@@ -151,8 +151,8 @@ const SideBarMenu = ({ onClose }) => {
             <ul>
               {data.map((item, key) => {
                 return (
-                  <li>
-                    <SideBarMenuItem key={key} item={item}></SideBarMenuItem>
+                  <li key={key}>
+                    <SideBarMenuItem item={item}></SideBarMenuItem>
                   </li>
                 );
               })}
