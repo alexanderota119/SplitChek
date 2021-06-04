@@ -7,7 +7,7 @@ import {
 import MobileProductCard from "components/ProductCard/mobile/index";
 import MobileCarsouelCard from "components/ProductCarsouelCard/mobile/index";
 import MobileRcdProduct from "components/RcdProductCard/mobile/index";
-
+import { FormattedMessage } from "react-intl";
 import { data } from "data/home/mobile/SearchSection";
 
 const settings = {
@@ -21,8 +21,7 @@ const SearchSection = () => {
   return (
     <SearchContainer>
       <h3>
-        About 45,800,000 results (0.88 seconds) shopping on behalf of David
-        Oabile
+        <FormattedMessage id="searchresult" />
       </h3>
       <CardContainer>
         {data.map((item, key) => {
