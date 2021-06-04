@@ -40,10 +40,7 @@ export const CommentContainer = styled.div`
   flex: 1;
 `;
 
-export const CommentArea = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+export const ReactionArea = styled.div`
   margin-bottom: 23px;
 `;
 

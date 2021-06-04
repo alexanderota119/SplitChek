@@ -12,7 +12,7 @@ import logoMobile from "assets/images/layout/header/logo-mobile.svg";
 import avatar from "assets/images/layout/header/Ellipse135.png";
 import CollapseSeach from "components/CollapseSearchBar";
 import AvatarImage from "components/Avatar/";
-import DropDown from "components/Dropdown";
+import MobileDropDown from "components/MobileDropDown/index";
 import { useLocale } from "contexts/location/location.provider";
 import SearchInput from "components/SearchInput";
 
@@ -44,11 +44,11 @@ const MobileMenu: React.FC = () => {
           ></LogoImage>
         </LogoContainer>
         <LanguageContainer>
-          <DropDown
+          <MobileDropDown
             list={languageType}
             click={clickHandle}
-            type="desktop"
-          ></DropDown>
+            type="mobile"
+          ></MobileDropDown>
         </LanguageContainer>
         <SearchContainer>
           <div className="search-tablet">

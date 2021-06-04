@@ -73,9 +73,9 @@ export const PriceContainer = styled.div`
     }
   }
 `;
-export const CommentImageArea = styled.div`
+export const ReactArea = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   flex: 1;
 `;
 

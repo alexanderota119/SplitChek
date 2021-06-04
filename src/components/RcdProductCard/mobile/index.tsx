@@ -3,6 +3,7 @@ import vector84 from "assets/images/home/vector84.svg";
 import { Button } from "components/Button/button";
 import { defaultCipherList } from "constants";
 import * as ProductPlane from "./index.style";
+import Reaction from "components/Reaction/index";
 const MobileRcdProduct = ({ list }) => {
   return (
     <ProductPlane.CardWrapper>
@@ -24,15 +25,9 @@ const MobileRcdProduct = ({ list }) => {
               {list.discounts}
             </p>
           </ProductPlane.PriceContainer>
-          <ProductPlane.CommentImageArea>
-            <ProductPlane.CommentNumberImage>
-              <img src={commentImage} />
-              <p>{list.comments}</p>
-            </ProductPlane.CommentNumberImage>
-            <ProductPlane.CommentText>
-              Comments {list.comments}
-            </ProductPlane.CommentText>
-          </ProductPlane.CommentImageArea>
+          <ProductPlane.ReactArea>
+            <Reaction comments={list.comments}></Reaction>
+          </ProductPlane.ReactArea>
         </ProductPlane.BodyContainer>
         <ProductPlane.DescriptionContainer>
           <p>{list.description}</p>

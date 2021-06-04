@@ -54,10 +54,10 @@ export const PriceContainer = styled.div`
     }
   }
 `;
-export const CommentImageArea = styled.div`
+export const ReactionArea = styled.div`
   display: flex;
-  flex-direction: column;
   flex: 1;
+  justify-content: flex-end;
 `;
 
 export const CommentNumberImage = styled.div`

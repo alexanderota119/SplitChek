@@ -77,7 +77,7 @@ export const GlobalStyle = createGlobalStyle(({ theme }) =>
       margin: 0,
     },
 
-    "p,span,button,li,div": {
+    "span,button,li,div": {
       fontFamily: "base",
       margin: 0,
     },
@@ -137,6 +137,12 @@ export const GlobalStyle = createGlobalStyle(({ theme }) =>
       margin: "0 auto",
       position: "relative",
       zIndex: "10",
+    },
+    ".header-wrapper": {
+      maxWidth: "1400px",
+      margin: "0 auto",
+      position: "relative",
+      zIndex: "11",
     },
     ".container": {
       paddingLeft: "98px",

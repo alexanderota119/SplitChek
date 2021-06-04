@@ -3,6 +3,8 @@ import { Button } from "components/Button/button";
 import commentImage from "assets/images/home/image14.png";
 import ellipse136 from "assets/images/home/ellipse136.png";
 import ellipse137 from "assets/images/home/ellipse137.png";
+
+import Reaction from "components/Reaction/index";
 import * as ProductPlane from "./index.styled";
 
 type Props = {
@@ -65,16 +67,7 @@ const ProductCard: React.FC<Props> = ({ list }) => {
         </ProductPlane.DescriptionFooter>
       </ProductPlane.TitleContainer>
       <ProductPlane.CommentContainer>
-        <ProductPlane.CommentImageArea>
-          <ProductPlane.CommentNumberImage>
-            <img src={commentImage} />
-            <p>{list.comment}</p>
-          </ProductPlane.CommentNumberImage>
-          <ProductPlane.CommentText>
-            Comments {list.comment}
-          </ProductPlane.CommentText>
-        </ProductPlane.CommentImageArea>
-
+        <Reaction comments={list.comment}></Reaction>
         <ProductPlane.PriceContainer>
           {list.downflag ? (
             <div className="downPriceContainer">

@@ -36,7 +36,7 @@ const StyledDropDownDiv = styled.div<StyledDropDownProps>`
   position: absolute;
   display: ${({ hide }) => (hide ? "block" : "none")};
   left: ${({ type }) => (type == "desktop" ? "0px" : "-20px")};
-  top: ${({ type }) => (type == "desktop" ? "10px" : "-60px")};
+  top: ${({ type }) => (type == "desktop" ? "10px" : "-15px")};
   box-shadow:  ${({ type }) =>
     type == "desktop" ? "none" : "0px 0px 20px rgba(0, 0, 0, 0.1);"}
   background: ${({ type }) => (type == "desktop" ? "transparent" : "white")};

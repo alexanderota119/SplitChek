@@ -3,14 +3,15 @@ import { themeGet } from "@styled-system/theme-get";
 
 export const LayoutWrapper = styled.div`
   background-color: ${themeGet("colors.body.bg", "#E5E5E5")};
-  position: relative;
   @media (max-width: 990px) {
     background-color: ${themeGet("colors.white", "#ffffff")};
   }
 `;
 
 export const BodyContainer = styled.div`
-  height: calc(100vh - 60px);
+  @media screen and (max-width: 768px) {
+    height: calc(100vh - 60px);
+  }
 `;
 
 export const FooterContainer = styled.div`

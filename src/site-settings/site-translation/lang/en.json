@@ -4,5 +4,9 @@
   "recommendproducts.header": "Recomended products:",
   "searchresult": "About 45,800,000 results (0.88 seconds) shopping on behalf of David Oabile",
   "recommend.dave": "Perfect gift for",
-  "recommend.name": "Dave Smith"
+  "recommend.name": "Dave Smith",
+  "sidebar.title": "shop for",
+  "sidebar.preferences": "View preferences",
+  "sidebar.button": "Shop for a another",
+  "sidebar.otherlink": "Other links"
 }

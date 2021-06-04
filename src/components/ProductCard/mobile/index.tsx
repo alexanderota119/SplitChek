@@ -4,7 +4,7 @@ import commentImage from "assets/images/home/image14.png";
 import badge1 from "assets/images/home/ellipse136.png";
 import badge2 from "assets/images/home/ellipse137.png";
 import * as Card from "./index.styled";
-
+import Reaction from "components/Reaction/index";
 type Props = {
   list;
 };
@@ -16,13 +16,10 @@ const MobileProductCard: React.FC<Props> = ({ list }) => {
         <Card.ProductContainer>
           <img src={list.src} />
           <Card.CommentContainer>
-            <Card.CommentArea>
-              <Card.CommentNumberImage>
-                <img src={commentImage} />
-                <p>{list.comments}</p>
-              </Card.CommentNumberImage>
-              <p>Comments {list.comments}</p>
-            </Card.CommentArea>
+            <Card.ReactionArea>
+              <Reaction comments={list.comments}></Reaction>
+            </Card.ReactionArea>
+
             <Card.PriceContainer>
               <div className="price">
                 <p>AUD {list.price}</p>

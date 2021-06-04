@@ -18,15 +18,15 @@ type StyledNoneActiveProps = {
 };
 const StyledActiveDiv = styled.div<StyledActiveProps>`
   & img {
-    min-width: 26px;
-    height: 26px;
+    min-width: 24px;
+    height: 21px;
   }
   display: ${({ hide }) => (hide ? "block" : "none")};
 `;
 const StyledNoneActiveDiv = styled.div<StyledNoneActiveProps>`
   & img {
-    min-width: 26px;
-    height: 26px;
+    min-width: 24px;
+    height: 21px;
   }
   display: ${({ hide }) => (hide ? "block" : "none")};
 `;

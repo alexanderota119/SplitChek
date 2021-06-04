@@ -25,6 +25,7 @@ const CarsouelSection = ({ mobile = false, setting }) => {
                 key={key}
                 src={item.src}
                 title={item.title}
+                isVideo={item.isVideo}
               ></CarsouelCell>
             );
           })}
@@ -34,7 +35,11 @@ const CarsouelSection = ({ mobile = false, setting }) => {
           {data.map((item, key) => {
             return (
               <div style={{ marginRight: "10px" }} key={key}>
-                <CarsouelCell src={item.src} title={item.title}></CarsouelCell>
+                <CarsouelCell
+                  src={item.src}
+                  title={item.title}
+                  isVideo={item.isVideo}
+                ></CarsouelCell>
               </div>
             );
           })}

@@ -6,6 +6,7 @@ import { Button } from "components/Button/button";
 
 //! import image
 import commentImage from "assets/images/home/image14.png";
+import Reaction from "components/Reaction/index";
 
 const MobileCarsouelCard = ({ list, settings }) => {
   return (
@@ -15,7 +16,7 @@ const MobileCarsouelCard = ({ list, settings }) => {
           <CustomSlider settings={settings} arrowPosition="-10px">
             {list.images.map((item, key) => {
               return (
-                <div className="imgArea" key= {key}>
+                <div className="imgArea" key={key}>
                   <img src={item.src} />
                 </div>
               );
@@ -35,13 +36,9 @@ const MobileCarsouelCard = ({ list, settings }) => {
               {list.soldBy}
             </p>
           </Card.PriceContainer>
-          <Card.CommentImageArea>
-            <Card.CommentNumberImage>
-              <img src={commentImage} />
-              <p>{list.comments}</p>
-            </Card.CommentNumberImage>
-            <Card.CommentText>Comments {list.comments}</Card.CommentText>
-          </Card.CommentImageArea>
+          <Card.ReactionArea>
+            <Reaction comments={list.comments}></Reaction>
+          </Card.ReactionArea>
         </Card.BodyContainer>
         <Card.ShipsFromText>
           <p>

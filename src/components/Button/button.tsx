@@ -52,6 +52,7 @@ export const StyledButton = styled.button(
         border: "none",
         "&:hover": { bg: "blue.dark" },
       },
+
       green: {
         color: "white",
         bg: "#4ECDC4",
@@ -68,14 +69,24 @@ export const StyledButton = styled.button(
           color: "blue.dark",
         },
       },
+      outlinedbitDarkBlue: {
+        border: "2px solid",
+        borderColor: "#36558F",
+        color: "#36558F",
+        bg: "white",
+        "&:hover": {
+          bg: "#36558F",
+          color: "white",
+        },
+      },
       outlinedbitBlue: {
         color: "#4ECDC4",
         bg: "white",
         border: "1px solid",
         borderColor: "#4ECDC4",
         "&:hover": {
-          borderColor: "blue.dark",
-          color: "#4ECDC4",
+          bg: "#4ECDC4",
+          color: "white",
         },
       },
       outlinedGray: {

@@ -3,7 +3,7 @@ import { Button } from "components/Button/button";
 import commentImage from "assets/images/home/image14.png";
 import vector84 from "assets/images/home/vector84.svg";
 import * as ProductPlane from "./index.styled";
-
+import Reaction from "components/Reaction/index";
 type Props = {
   list;
 };
@@ -36,15 +36,7 @@ const RcdProductCard: React.FC<Props> = ({ list }) => {
         </p>
       </ProductPlane.TitleContainer>
       <ProductPlane.CommentContainer>
-        <ProductPlane.CommentImageArea>
-          <ProductPlane.CommentNumberImage>
-            <img src={commentImage} />
-            <p>{list.comment}</p>
-          </ProductPlane.CommentNumberImage>
-          <ProductPlane.CommentText>
-            Comments {list.comment}
-          </ProductPlane.CommentText>
-        </ProductPlane.CommentImageArea>
+        <Reaction comments={list.comment}></Reaction>
         <ProductPlane.PriceContainer>
           <p>{list.price}</p>
         </ProductPlane.PriceContainer>

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const BrowerGiftsContainer = styled.div`
   padding-top: 44px;
-  padding-bottom: 158px;
 
   & .desktop {
     display: block;
@@ -14,10 +13,10 @@ export const BrowerGiftsContainer = styled.div`
     font-size: 14px;
     font-weight: 400;
     line-height: 1.4;
+    color: #434343;
   }
   @media screen and (max-width: 768px) {
     padding-top: 0px;
-    padding-bottom: 0px;
     & .desktop {
       display: none;
     }
