@@ -101,7 +101,7 @@ type currentType = {
   label: string;
 };
 
-const Dropdown = ({ list, click, type = "desktop" }) => {
+const MobileDropdown = ({ list, click, type = "desktop" }) => {
   const [current, setCurrent] = useState<currentType>({
     id: list[0].id,
     label: list[0].label,
@@ -160,4 +160,4 @@ const Dropdown = ({ list, click, type = "desktop" }) => {
   );
 };
 
-export default Dropdown;
+export default MobileDropdown;
