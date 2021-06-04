@@ -27,11 +27,9 @@ const pricetype = [
     label: "EUR",
   },
 ];
-const clickHandle = (val) => {
-  console.log(val);
-};
 
 const DesktopMenu: React.FC = () => {
+  const priceHandle = (val) => {};
   return (
     <MenuNav>
       <nav className="header-nav">
@@ -60,7 +58,7 @@ const DesktopMenu: React.FC = () => {
                 fontWeight: "bold",
               }}
             >
-              <Dropdown list={pricetype} click={clickHandle} />
+              <Dropdown list={pricetype} click={priceHandle} />
             </div>
           </li>
           <li>

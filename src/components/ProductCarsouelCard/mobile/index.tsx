@@ -15,7 +15,7 @@ const MobileCarsouelCard = ({ list, settings }) => {
           <CustomSlider settings={settings} arrowPosition="-10px">
             {list.images.map((item, key) => {
               return (
-                <div className="imgArea" key={key}>
+                <div className="imgArea" key= {key}>
                   <img src={item.src} />
                 </div>
               );

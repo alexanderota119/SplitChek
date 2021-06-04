@@ -8,6 +8,7 @@ import CustomSlider from "components/Slider/index";
 import RcdCarsouelCard from "components/RcdCarsouelCard/index";
 
 import { data } from "data/home/desktop/RecommendSection";
+import { FormattedMessage } from "react-intl";
 
 const settings = {
   dots: false,
@@ -29,7 +30,12 @@ const RecommendSection: React.FC = () => {
   return (
     <RecommendSectionArea>
       <RecommendTitle>
-        <h1>Recomended products:</h1>
+        <h1>
+          <FormattedMessage
+            id="recommendproducts.header"
+            defaultMessage="Recomended products:"
+          ></FormattedMessage>
+        </h1>
       </RecommendTitle>
       <RecommendSliderContainer>
         <CustomSlider settings={settings} arrowPosition="-0px">

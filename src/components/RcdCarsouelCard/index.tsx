@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "components/Button/button";
 import ColorText from "components/ColorText/color-text";
 import * as Card from "./index.styled";
+import { FormattedMessage } from "react-intl";
 
 type Props = {
   list;
@@ -16,8 +17,12 @@ const RcdCarsouelCard: React.FC<Props> = ({ list }) => {
             <img src={list.src} />
           </Card.ProductImageContainer>
           <Card.AuthorContainer>
-            <ColorText color="gray.product">Perfect gift for</ColorText>{" "}
-            <ColorText>Dave Smith</ColorText>
+            <ColorText color="gray.product">
+              <FormattedMessage id="recommend.dave"></FormattedMessage>
+            </ColorText>{" "}
+            <ColorText>
+              <FormattedMessage id="recommend.name"></FormattedMessage>
+            </ColorText>
           </Card.AuthorContainer>
         </Card.ProductContainer>
         <Card.DescriptionContainer>
