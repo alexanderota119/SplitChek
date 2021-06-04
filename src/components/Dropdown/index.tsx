@@ -11,6 +11,7 @@ const StyledDropDown = styled.div`
 
 type StyledDropDownProps = {
   hide: boolean;
+  type: string;
 };
 
 const StyledDropDownDiv = styled.div<StyledDropDownProps>`
@@ -19,8 +20,8 @@ const StyledDropDownDiv = styled.div<StyledDropDownProps>`
   z-index: 9999;
   color: white;
   padding: 16px 0;
-  left: 0;
-  top: 10px;
+  left: -10px;
+  top: ${({ type }) => (type == "mobile" ? "-50px" : "10px")};
   position: absolute;
   display: ${({ hide }) => (hide ? "block" : "none")};
   overflow: auto;
@@ -74,7 +75,13 @@ const StyledDropDownItemDiv = styled.div<StyledProps>`
   font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
+  background: #ffffff;
+  border-radius: 10px;
+  border: rgba(255, 255, 255, 0.5);
+  width: 70px;
+  height: 30px;
+  justify-content: center;
   cursor: pointer;
   color: #36558f;
   img {
@@ -92,7 +99,7 @@ type currentType = {
   label: string;
 };
 
-const Dropdown = ({ list, click }) => {
+const Dropdown = ({ list, click, type = "desktop" }) => {
   const [current, setCurrent] = useState<currentType>({
     id: list[0].id,
     label: list[0].label,
@@ -127,7 +134,7 @@ const Dropdown = ({ list, click }) => {
       <StyledDropDownHeader onClick={() => setHide(!hide)}>
         <span>{current.label}</span>
       </StyledDropDownHeader>
-      <StyledDropDownDiv ref={dropMenuRef} hide={hide}>
+      <StyledDropDownDiv ref={dropMenuRef} hide={hide} type={type}>
         {list.map((item, index) => {
           return (
             <StyledDropDownItemDiv
