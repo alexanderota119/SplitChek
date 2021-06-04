@@ -48,7 +48,6 @@ const HeaderIcon = ({ activeSrc, noneSrc, hide }) => {
 
 const SideBarMenuItem = ({ item }) => {
   const [hide, setHide] = useState(false);
-  console.log(item);
   return (
     <MenuItemContainer
       onMouseEnter={() => setHide(!hide)}
