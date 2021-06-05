@@ -52,3 +52,8 @@ export const ProductSectionContainer = styled.div`
     width: 100%;
   }
 `;
+
+export const SponsoredBottomContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;

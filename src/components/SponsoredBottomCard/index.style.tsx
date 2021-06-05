@@ -1,19 +1,29 @@
 import styled from "styled-components";
 
 export const CardWrapper = styled.div`
+  margin-bottom: 20px;
+  margin-right: 30px;
+  @media screen and (max-width: 1399px) {
+    padding: 0 20px;
+    margin-right: 0px;
+    width: 50%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+export const CardContainer = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   background: #ffffff;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   padding: 26px 15px;
-  margin: 15px;
-`;
-
-export const CardContainer = styled.div`
-  max-width: 450px;
   display: flex;
   flex-direction: column;
+  margin-right: 15px;
 `;
 
 export const ProductContainer = styled.div`

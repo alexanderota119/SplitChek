@@ -12,7 +12,12 @@ import banner18 from "assets/images/home/banner18.png";
 import {
   ProductSectionContainer,
   SectionContainer,
+  SponsoredBottomContainer,
 } from "site-settings/site-style/home/home.style";
+
+import { data } from "data/home/desktop/SponsoredBottomSlider";
+import SponsoredBottomCard from "components/SponsoredBottomCard";
+import SponsoredBottomSlider from "./SponsoredBottomSlider";
 
 const list = {
   src: banner18,
@@ -60,6 +65,7 @@ const DesktopSection = () => {
         </ProductSectionContainer>
         <SponsoredCardSection></SponsoredCardSection>
       </SectionContainer>
+      <SponsoredBottomSlider></SponsoredBottomSlider>
     </>
   );
 };
