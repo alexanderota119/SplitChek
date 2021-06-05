@@ -8,6 +8,7 @@ export const MenuItemContainer = styled.div<StyledActiveProps>`
   display: flex;
   justify-content: start;
   align-items: center;
+  cursor: pointer;
   & p {
     margin-bottom: 0px;
     font-size: 14px;
