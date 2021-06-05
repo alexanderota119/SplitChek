@@ -4,7 +4,7 @@ import SearchSection from "./SearchSections";
 import RecommendSection from "../DesktopSection/RecommendSection";
 
 import SearchProductSection from "./SearchProductSection";
-import SponsoredBottomSlider from "../DesktopSection/SponsoredBottomSlider";
+import MobileSponsoredSlider from "../MobileSections/MobileSponsored";
 import { FormattedMessage } from "react-intl";
 import styled from "styled-components";
 const MobileSettings = {
@@ -35,7 +35,7 @@ const MobileSections = () => {
       <RecommendSection></RecommendSection>
       <SearchProductSection />
       <SponsoredCardSection></SponsoredCardSection>
-      <SponsoredBottomSlider />
+      <MobileSponsoredSlider></MobileSponsoredSlider>
     </>
   );
 };

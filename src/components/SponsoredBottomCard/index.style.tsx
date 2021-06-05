@@ -10,11 +10,13 @@ export const CardWrapper = styled.div`
   }
   @media screen and (max-width: 768px) {
     width: 100%;
+    padding: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 `;
 
 export const CardContainer = styled.div`
-  width: 100%;
   display: flex;
   justify-content: center;
   background: #ffffff;
@@ -23,7 +25,6 @@ export const CardContainer = styled.div`
   padding: 26px 15px;
   display: flex;
   flex-direction: column;
-  margin-right: 15px;
 `;
 
 export const ProductContainer = styled.div`
