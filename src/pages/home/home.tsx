@@ -8,6 +8,9 @@ import { BrowerGiftsContainer } from "site-settings/site-style/home/home.style";
 import MobileSections from "./sections/MobileSections";
 import DesktopSections from "./sections/DesktopSection";
 
+//! components
+import Circle from "components/Circle";
+
 export default function Home() {
   return (
     <>

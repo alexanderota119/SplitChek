@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BrowerGiftsContainer = styled.div`
   padding-top: 44px;
-
+  position: relative;
   & .desktop {
     display: block;
   }

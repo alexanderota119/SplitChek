@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ProductSectionContainer = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -10,5 +11,116 @@ export const ProductSectionContainer = styled.div`
     line-height: 24px;
     color: #4ecdc4;
     margin-bottom: 26px;
+  }
+`;
+
+export const CircleContainer1 = styled.div`
+  position: absolute;
+  left: -90px;
+  top: 130px;
+  @media screen and (max-width: 998px) {
+    top: 190px;
+  }
+  @media screen and (max-width: 850px) {
+    top: 300px;
+  }
+  @media screen and (max-width: 782px) {
+    top: 350px;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const CircleContainer2 = styled.div`
+  position: absolute;
+  left: -35px;
+  top: 700px;
+  z-index: -1;
+  @media screen and (max-width: 998px) {
+    top: 800px;
+  }
+  @media screen and (max-width: 950px) {
+    top: 850px;
+  }
+  @media screen and (max-width: 850px) {
+    top: 1000px;
+  }
+  @media screen and (max-width: 782px) {
+    top: 1300px;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const CircleContainer3 = styled.div`
+  position: absolute;
+  right: -30px;
+  top: 740px;
+  z-index: -1;
+  @media screen and (max-width: 1011px) {
+    top: 810px;
+  }
+  @media screen and (max-width: 950px) {
+    top: 850px;
+  }
+  @media screen and (max-width: 875px) {
+    top: 900px;
+  }
+  @media screen and (max-width: 782px) {
+    top: 1320px;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const CircleContainer4 = styled.div`
+  position: absolute;
+  right: -420px;
+  top: 100px;
+  z-index: -1;
+  @media screen and (max-width: 1399px) {
+    right: -75px;
+    top: 100px;
+  }
+  @media screen and (max-width: 950px) {
+    top: 130px;
+  }
+`;
+
+export const DotContainer5 = styled.div`
+  position: absolute;
+  right: -510px;
+  top: 550px;
+  z-index: -1;
+  & img {
+    min-width: 178px;
+    height: 260px;
+  }
+  @media screen and (max-width: 1399px) {
+    right: -150px;
+    top: 3550px;
+  }
+  @media screen and (max-width: 1018px) {
+    right: -150px;
+    top: 3800px;
+  }
+  @media screen and (max-width: 950px) {
+    right: -150px;
+    top: 4000px;
+  }
+  @media screen and (max-width: 875px) {
+    right: -150px;
+    top: 4350px;
+  }
+  @media screen and (max-width: 782px) {
+    right: -150px;
+    top: 5700px;
+  }
+  @media screen and (max-width: 768px) {
+    right: -150px;
+    display: none;
   }
 `;
