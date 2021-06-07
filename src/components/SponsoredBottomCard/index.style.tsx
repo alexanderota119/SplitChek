@@ -41,8 +41,21 @@ export const ImageContainer = styled.div`
   align-items: center;
   margin-right: 14px;
   & img {
-    width: 103px;
+    min-width: 103px;
     height: 107px;
+  }
+
+  @media screen and (max-width: 768px) {
+    min-width: 93px;
+    min-height: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    & img {
+      min-width: 93px;
+      height: 107px;
+    }
   }
 `;
 

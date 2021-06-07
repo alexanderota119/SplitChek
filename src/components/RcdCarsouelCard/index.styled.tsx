@@ -44,6 +44,9 @@ export const AuthorContainer = styled.div`
   width: 100%;
   & span {
     font-size: 16px !important;
+    @media screen and (max-width: 768px) {
+      font-size: 14px !important;
+    }
   }
 `;
 
