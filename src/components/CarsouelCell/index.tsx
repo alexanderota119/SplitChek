@@ -16,11 +16,10 @@ const CarsouleCellArea = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 13px 14px 14px 14px;
+  padding: 13px 9px 14px 10px;
   border: 1px solid #bacdd8;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
-  margin-bottom: 5px;
   margin-right: 10px;
   maring-left: 20px;
   @media screen and (max-width: 768px) {
@@ -29,10 +28,13 @@ const CarsouleCellArea = styled.div`
 `;
 
 const CarsouleImage = styled.div`
-  border-radius: 16x;
-  max-width: 116px;
-  max-height: 86px;
+  border-radius: 16px;
+  min-width: 116px;
+  min-height: 86px;
   margin-bottom: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   & img {
     max-width: 116px;
     max-height: 86px;

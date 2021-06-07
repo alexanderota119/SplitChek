@@ -7,10 +7,15 @@ export const ProductSectionContainer = styled.div`
   width: 100%;
   & h3 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     color: #4ecdc4;
     margin-bottom: 26px;
+  }
+  @media screen and (max-width: 768px) {
+    & h3 {
+      font-size: 20px;
+    }
   }
 `;
 

@@ -51,6 +51,8 @@ export const DescriptionContainer = styled.div`
 export const DescriptionHeader = styled.div`
   & h5 {
     margin-bottom: 19px;
+    color: #140a01;
+    font-weight: bold;
   }
 `;
 
@@ -58,6 +60,9 @@ export const DescriptionBody = styled.div`
   font-weight: normal;
   font-size: 14px;
   line-height: 140%;
+  & p {
+    margin-bottom: 0px;
+  }
 `;
 
 export const ProductInfoContainer = styled.div`
@@ -98,8 +103,10 @@ export const TagContainer = styled.div`
     width: 114px;
     height: 26px;
     font-size: 11px;
-    margin-right: 4px;
-    margin-top: 6px;
+    margin-right: 2px;
+    margin-top: 2px;
+    border-radius: 8px;
+    font-weight: bold;
   }
 `;
 
@@ -107,16 +114,17 @@ export const SoldByContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 21px;
-  justify-content: space-between;
 `;
 
 export const FooterBody = styled.div`
+  margin-right: 9.5px;
   & p {
     font-family: Montserrat;
     font-style: normal;
     font-size: 14px;
     line-height: 17px;
     color: #434343;
+    margin-bottom: 0px;
   }
 `;
 
@@ -161,12 +169,20 @@ export const CommentText = styled.div`
 `;
 
 export const PriceContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
   & p {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold !important;
     font-size: 20px !important;
     line-height: 24px;
     text-transform: uppercase;
+    color: #140a01;
+    margin-bottom: 31px;
   }
 `;

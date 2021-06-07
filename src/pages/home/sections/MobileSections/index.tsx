@@ -7,6 +7,7 @@ import SearchProductSection from "./SearchProductSection";
 import MobileSponsoredSlider from "../MobileSections/MobileSponsored";
 import { FormattedMessage } from "react-intl";
 import styled from "styled-components";
+import BargainSection from "../DesktopSection/BargainSection";
 const MobileSettings = {
   initialIndex: 1,
   groupCells: 1,
@@ -36,6 +37,7 @@ const MobileSections = () => {
       <SponsoredCardSection></SponsoredCardSection>
       <SearchSection></SearchSection>
       <RecommendSection></RecommendSection>
+      <BargainSection mobile={true}></BargainSection>
       <SearchProductSection />
       <SponsoredCardSection></SponsoredCardSection>
       <MobileSponsoredSlider></MobileSponsoredSlider>

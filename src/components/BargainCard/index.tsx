@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const BargainWrapper = styled.div`
-  width: 100%;
+  width: 120px;
   margin-top: 10px;
 `;
 

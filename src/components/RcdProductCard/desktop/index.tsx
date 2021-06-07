@@ -22,9 +22,7 @@ const RcdProductCard: React.FC<Props> = ({ list }) => {
         </ProductPlane.ImageProduct>
         <ProductPlane.MoreOfferContainer>
           <img src={vector84} />
-          <span>
-            <a>more offers</a>
-          </span>
+          <span>more offers</span>
         </ProductPlane.MoreOfferContainer>
       </ProductPlane.ImageContainer>
       <ProductPlane.TitleContainer>

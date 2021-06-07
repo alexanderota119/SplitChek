@@ -7,6 +7,7 @@ export const HeaderWrapper = styled.header`
 
 export const HeaderContainer = styled.div`
   width: 100%;
+
   & .desktop {
     display: block;
   }
@@ -25,7 +26,7 @@ export const HeaderContainer = styled.div`
 
 export const LanguageContainer = styled.div`
   margin-right: 71px;
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 1024px) {
     margin-right: 20px;
   }
 `;
@@ -43,9 +44,12 @@ export const HeaderInner = styled.div`
 `;
 
 export const HeaderInnerLogo = styled.div`
-  margin-right: 18px;
+  margin-right: 30px;
   @media screen and (max-width: 320px) {
     width: 50%;
+  }
+  @media screen and (max-width: 1024px) {
+    margin-right: 10px;
   }
 `;
 
@@ -59,5 +63,13 @@ export const HeaderInnerBurger = styled.div`
   @media screen and (max-width: 480px) {
     display: block;
     z-index: 1001;
+  }
+`;
+
+export const SearchContainer = styled.div`
+  display: flex;
+  flex: 1;
+  margin-right: 1px;
+  @media screen and (max-width: 768px) {
   }
 `;

@@ -5,6 +5,7 @@ import {
   HeaderInnerLogo,
   HeaderContainer,
   LanguageContainer,
+  SearchContainer,
 } from "./header.style";
 import LogoImage from "components/LogoImage/logo-image";
 import Logo from "assets/images/layout/header/Logo.svg";
@@ -43,7 +44,10 @@ const Header: React.FC = () => {
               <LanguageContainer>
                 <DropDown list={languageType} click={clickHandle}></DropDown>
               </LanguageContainer>
-              <SearchInput />
+              <SearchContainer>
+                <SearchInput />
+              </SearchContainer>
+
               <DesktopMenu />
             </HeaderInner>
           </div>

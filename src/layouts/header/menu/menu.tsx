@@ -39,7 +39,6 @@ const DesktopMenu: React.FC = () => {
               <HeaderIcon noneSrc={home} activeSrc={activeHome}></HeaderIcon>
             </LinkItem>
           </li>
-
           <li>
             <LinkItem href="/">
               <HeaderIcon noneSrc={tip} activeSrc={tipActive}></HeaderIcon>

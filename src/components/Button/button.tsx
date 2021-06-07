@@ -123,7 +123,7 @@ export const StyledButton = styled.button(
       },
       vsmall: {
         height: "35px",
-        fontSize: 12,
+        fontSize: 11,
         px: 2,
         py: 2,
       },

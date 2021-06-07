@@ -80,6 +80,7 @@ export const DescriptionContainer = styled.div`
     font-size: 12px;
     line-height: 140%;
     color: #434343;
+    margin-bottom: 0px;
   }
 `;
 

@@ -33,7 +33,7 @@ const SponsoredBottomCard: React.FC<Props> = ({ list }) => {
         <DescriptionContainer>
           <p>
             {list.description}...
-            <a href={list.href}> Read More...</a>
+            <a href={list.href}> Read More</a>
           </p>
         </DescriptionContainer>
         <FooterContainer>

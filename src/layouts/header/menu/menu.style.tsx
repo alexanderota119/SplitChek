@@ -8,9 +8,12 @@ export const MenuNav = styled.div`
     align-items: center;
     justify-content: space-between;
     & li {
-      margin-left: 27px;
+      margin-left: 23px;
+      :last-child {
+        margin-left: 0px;
+      }
       @media screen and (max-width: 950px) {
-        margin-left: 10px;
+        margin-right: 10px;
       }
     }
   }

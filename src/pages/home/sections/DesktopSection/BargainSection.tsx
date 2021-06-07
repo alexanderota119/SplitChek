@@ -21,6 +21,13 @@ const BargainContainer = styled.div`
   }
 `;
 
+const CardContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+`;
+
 const BargainSliderContainer = styled.div``;
 
 const data = [
@@ -95,7 +102,7 @@ const settings = {
   ],
 };
 
-const BargainSection = ({}) => {
+const BargainSection = ({ mobile = false }) => {
   return (
     <BargainContainer>
       <h4>
@@ -104,12 +111,25 @@ const BargainSection = ({}) => {
           defaultMessage="Snatch a bargain!"
         ></FormattedMessage>
       </h4>
+
       <BargainSliderContainer>
-        <CustomSlider settings={settings} arrowPosition="-10px">
-          {data.map((item, key) => {
-            return <BargainCard key={key} item={item}></BargainCard>;
-          })}
-        </CustomSlider>
+        {mobile ? (
+          <CardContainer>
+            {data.map((item, key) => {
+              return (
+                <div style={{ marginRight: "30px" }} key={key}>
+                  <BargainCard key={key} item={item}></BargainCard>
+                </div>
+              );
+            })}
+          </CardContainer>
+        ) : (
+          <CustomSlider settings={settings} arrowPosition="-10px">
+            {data.map((item, key) => {
+              return <BargainCard key={key} item={item}></BargainCard>;
+            })}
+          </CustomSlider>
+        )}
       </BargainSliderContainer>
     </BargainContainer>
   );

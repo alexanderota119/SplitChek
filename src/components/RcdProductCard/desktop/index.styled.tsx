@@ -57,6 +57,7 @@ export const ImageProduct = styled.div`
       line-height: 29px;
       margin-bottom: 16px;
       color: white;
+      margin-bottom: 0px;
     }
   }
 `;
@@ -65,15 +66,17 @@ export const MoreOfferContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
   & img {
     min-width: 14px;
     height: 7px;
   }
   & span {
-    color: #36558f;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+    text-decoration-line: underline;
+    color: #36558f;
   }
 `;
 
@@ -84,10 +87,15 @@ export const TitleContainer = styled.div`
 
   h5 {
     margin-bottom: 20px;
+    color: #140a01;
+    font-weight: bold;
   }
 
   .product-description {
     margin-bottom: 16px;
+  }
+  .product-discounts {
+    margin-bottom: 0px;
   }
 `;
 

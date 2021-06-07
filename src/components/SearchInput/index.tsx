@@ -7,10 +7,6 @@ type Props = {};
 const SearchContainer = styled.div`
   position: relative;
   width: 100%;
-  margin-right: 26px;
-  @media screen and (max-width: 768px) {
-    margin-right: 15px;
-  }
 `;
 const Searchflex = styled.div`
   white-space: nowrap;

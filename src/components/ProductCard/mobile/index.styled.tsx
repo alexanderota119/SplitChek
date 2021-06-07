@@ -76,6 +76,7 @@ export const PriceContainer = styled.div`
       line-height: 24px;
       text-transform: uppercase;
       margin-bottom: 10px;
+      color: #140A01;
     }
   }
 
@@ -101,9 +102,11 @@ export const DescriptionContainer = styled.div`
   margin-bottom: 18px;
   & h5 {
     margin-bottom: 15px;
+    color: #140a01;
   }
   & p {
     line-height: 140%;
+    margin-bottom: 0px;
   }
 `;
 
@@ -116,7 +119,7 @@ export const TagGroupContainer = styled.div`
     padding: 9px;
     font-size: 11px;
     margin-right: 2px;
-    margin-top: 6px;
+    margin-top: 2px;
   }
 `;
 

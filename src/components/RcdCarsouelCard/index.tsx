@@ -43,7 +43,7 @@ const RcdCarsouelCard: React.FC<Props> = ({ list }) => {
             <Button size="vbig" variant="orange">
               <FormattedMessage
                 id="recommend.open"
-                defaultMessage="open"
+                defaultMessage="Open"
               ></FormattedMessage>
             </Button>
           </Card.DescriptionFooter>

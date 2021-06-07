@@ -55,6 +55,9 @@ export const SponsoredHeader = styled.div`
   }
   h5 {
     margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #140a01;
   }
 `;
 
@@ -99,10 +102,19 @@ export const ProductDescription = styled.div`
 `;
 
 export const SponsoredDesciption = styled.div`
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 140%;
-  margin-bottom: 14px;
+  & p {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+    margin-bottom: 12 px;
+    color: #434343;
+  }
+  & a {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+    margin-bottom: 12 px;
+  }
 `;
 
 export const SponsoredButtonGroup = styled.div`
@@ -114,8 +126,9 @@ export const SponsoredButtonGroup = styled.div`
     height: 26px;
     padding: 9px;
     font-size: 11px;
-    margin-right: 4px;
-    margin-top: 6px;
+    margin-right: 2px;
+    margin-top: 2px;
+    border-radius: 8px;
   }
 `;
 

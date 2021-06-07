@@ -26,7 +26,6 @@ const languageType = [
     label: "DE",
   },
 ];
-const hadleDropDown = (val) => {};
 
 const MobileMenu: React.FC = () => {
   const { locale, changeLocation } = useLocale();

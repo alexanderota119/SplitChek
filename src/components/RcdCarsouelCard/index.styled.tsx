@@ -54,7 +54,10 @@ export const DescriptionContainer = styled.div`
 
 export const DescriptionHeader = styled.div`
   & h5 {
+    font-size: 16px;
     margin-bottom: 28px;
+    font-weight: bold;
+    color: #140a01;
   }
 `;
 
@@ -64,6 +67,8 @@ export const PriceTitle = styled.div`
     font-weight: bold !important;
     font-size: 30px !important;
     line-height: 37px;
+    color: #140a01;
+    margin-bottom: 0px;
   }
 `;
 

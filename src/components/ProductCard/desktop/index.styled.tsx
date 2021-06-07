@@ -7,7 +7,7 @@ export const ProductCardContainer = styled.div`
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 33px;
   justify-content: space-between;
-  padding: 24px 30px;
+  padding: 23px 29px 28px 31px;
   margin-bottom: 30px;
   @media screen and (max-width: 1399px) {
     width: 100%;
@@ -31,15 +31,16 @@ export const ImageContainer = styled.div`
     justify-content: flex-start;
     align-items: center;
     & .imgSection1 {
+      margin-right: -12px;
       & img {
-        width: 25px;
-        height: 25px;
+        min-width: 32px;
+        height: 32px;
       }
     }
     & .imageSection2 {
       & img {
-        width: 38px;
-        height: 38px;
+        min-width: 48px;
+        height: 48px;
       }
     }
   }
@@ -53,7 +54,9 @@ export const TitleContainer = styled.div`
 
 export const DescriptionHeader = styled.div`
   & h5 {
-    margin-bottom: 14px;
+    margin-bottom: 18px;
+    font-weight: bold;
+    color: #140a01;
   }
 `;
 
@@ -65,6 +68,7 @@ export const DescriptionBody = styled.div`
     font-weight: normal;
     font-size: 14px;
     line-height: 140%;
+    margin-bottom: 0px;
   }
 `;
 
@@ -76,8 +80,10 @@ export const DescriptionButtons = styled.div`
     width: 114px;
     height: 26px;
     font-size: 11px;
-    margin-right: 4px;
-    margin-top: 6px;
+    margin-right: 2px;
+    margin-top: 2px;
+    border-radius: 8px;
+    font-weight: bold;
   }
 `;
 
@@ -94,6 +100,7 @@ export const FooterBody = styled.div`
     font-size: 14px;
     line-height: 17px;
     color: #434343;
+    margin-bottom: 0px;
   }
 `;
 
@@ -144,11 +151,14 @@ export const PriceContainer = styled.div`
     & .downPrice {
       display: flex;
       flex-direction: row;
+      margin-bottom: 3px;
+
       & p {
         font-weight: 500;
         font-size: 12px !important;
         line-height: 15px !important;
         color: #4ecdc4;
+        margin-bottom: 0px;
         margin-right: 6px;
       }
       & span {
@@ -166,7 +176,7 @@ export const PriceContainer = styled.div`
       font-size: 20px;
       line-height: 24px;
       text-transform: uppercase;
-      color: #4ecdc4;
+      color: #140a01;
     }
   }
 
@@ -177,5 +187,7 @@ export const PriceContainer = styled.div`
     font-size: 20px !important;
     line-height: 24px;
     text-transform: uppercase;
+    color: #140a01;
+    margin-bottom: 0px;
   }
 `;

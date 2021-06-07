@@ -1,8 +1,6 @@
 import React from "react";
 import { Button } from "components/Button/button";
 import CustomSlider from "components/Slider/index";
-
-import commentImage from "assets/images/home/image14.png";
 import Reaction from "components/Reaction/index";
 import badge1 from "assets/images/home/ellipse136.png";
 import badge2 from "assets/images/home/ellipse137.png";
@@ -124,10 +122,10 @@ const ProductCarsouelCard: React.FC<Props> = ({ list }) => {
         <Reaction comments={list.comment}></Reaction>
         <Plane.PriceContainer>
           <p>{list.price}</p>
+          <Button size="vbig" variant="orange">
+            Open
+          </Button>
         </Plane.PriceContainer>
-        <Button size="vbig" variant="orange">
-          Open
-        </Button>
       </Plane.CommentContainer>
     </Plane.ProductCarsouelCardArea>
   );

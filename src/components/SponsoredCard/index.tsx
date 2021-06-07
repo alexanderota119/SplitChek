@@ -35,8 +35,10 @@ const SponsordCard: React.FC<Props> = ({ list }) => {
           </Sponsored.ProductDescription>
         </Sponsored.SponsoredProduct>
         <Sponsored.SponsoredDesciption>
-          {list.description}
-          <a>Read More</a>
+          <p>
+            {list.description}
+            <a href={"#"}>Read More</a>
+          </p>
         </Sponsored.SponsoredDesciption>
         <Sponsored.SponsoredButtonGroup>
           <Button size="vsmall" variant="outlinedbitBlue">
