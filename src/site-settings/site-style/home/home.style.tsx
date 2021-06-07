@@ -24,9 +24,10 @@ export const BrowerGiftsContainer = styled.div`
       display: block;
     }
     p {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 400;
       line-height: 1.4;
+      color: #434343;
     }
   }
 `;

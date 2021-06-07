@@ -8,10 +8,12 @@ export const RecommendSectionArea = styled.div`
 `;
 
 export const RecommendTitle = styled.div`
-  & h1 {
+  & h3 {
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
+    margin-bottom: 0px;
+    color: #140a01;
   }
   margin-bottom: 30px;
 `;

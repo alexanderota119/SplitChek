@@ -13,11 +13,12 @@ export const SponsoredSectionArea = styled.div`
     margin-bottom: 44px;
   }
 
-  & h2 {
+  & h3 {
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
     color: #4ecdc4;
+    margin-bottom: 0px;
   }
 `;
 

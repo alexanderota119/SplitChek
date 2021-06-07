@@ -91,7 +91,7 @@ export const PriceContainer = styled.div`
     & p {
       font-size: 12px;
       line-height: 15px;
-      margin-bottom: 11px;
+      margin-bottom: 0px;
     }
   }
 `;
@@ -120,6 +120,7 @@ export const TagGroupContainer = styled.div`
     font-size: 11px;
     margin-right: 2px;
     margin-top: 2px;
+    border-radius: 8px;
   }
 `;
 
@@ -141,16 +142,20 @@ export const BadgeContainer = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    & .imgSection1 {
+
+    & .imageSection1 {
+      z-index: 2;
       & img {
-        width: 25px;
-        height: 25px;
+        min-width: 32px;
+        height: 32px;
       }
     }
     & .imageSection2 {
+      margin-left: -15px;
+      z-index: 1;
       & img {
-        width: 38px;
-        height: 38px;
+        min-width: 48px;
+        height: 48px;
       }
     }
   }

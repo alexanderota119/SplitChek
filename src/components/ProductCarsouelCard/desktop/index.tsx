@@ -46,7 +46,7 @@ const ProductCarsouelCard: React.FC<Props> = ({ list }) => {
           {list.isTop ? (
             <>
               <Plane.BadgeContainer>
-                <div className="imageSection1">
+                <div className="imgSection1">
                   <img src={badge1} />
                 </div>
                 <div className="imageSection2">

@@ -77,15 +77,18 @@ export const BadgeContainer = styled.div`
   align-items: center;
   margin-right: 50px;
   & .imgSection1 {
+    z-index: 2;
     & img {
-      width: 25px;
-      height: 25px;
+      min-width: 32px;
+      height: 32px;
     }
   }
   & .imageSection2 {
+    z-index: 1;
+    margin-left: -15px;
     & img {
-      width: 38px;
-      height: 38px;
+      min-width: 48px;
+      height: 48px;
     }
   }
 `;

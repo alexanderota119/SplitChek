@@ -51,6 +51,7 @@ export const RcdImageContainer = styled.div`
       font-size: 24px;
       line-height: 29px;
       margin-bottom: 16px;
+      color: white;
     }
   }
 `;
@@ -67,10 +68,15 @@ export const PriceContainer = styled.div`
   & .price {
     & h5 {
       font-weight: bold;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 24px;
       margin-bottom: 16px;
+      color: #140a01;
     }
+  }
+  & p {
+    font-size: 12px;
+    margin-bottom: 0px;
   }
 `;
 export const ReactArea = styled.div`
@@ -109,6 +115,7 @@ export const DescriptionContainer = styled.div`
   & p {
     font-size: 14px;
     line-height: 140%;
+    margin-bottom: 0px;
   }
 `;
 
@@ -131,6 +138,7 @@ export const MoreOfferContainer = styled.div`
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+    text-decoration-line: underline;
   }
 `;
 

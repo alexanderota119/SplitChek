@@ -43,7 +43,7 @@ export const ProductImageContainer = styled.div`
 export const AuthorContainer = styled.div`
   width: 100%;
   & span {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
 `;
 

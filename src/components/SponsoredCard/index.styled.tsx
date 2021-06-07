@@ -41,15 +41,18 @@ export const SponsoredHeader = styled.div`
     justify-content: flex-start;
     align-items: center;
     & .imageSection1 {
+      z-index: 2;
       & img {
-        min-width: 25px;
-        height: 25px;
+        min-width: 32px;
+        height: 32px;
       }
     }
     & .imageSection2 {
+      margin-left: -15px;
+      z-index: 1;
       & img {
-        min-width: 38px;
-        height: 38px;
+        min-width: 48px;
+        height: 48px;
       }
     }
   }
@@ -68,8 +71,13 @@ export const SponsoredProduct = styled.div`
 
   & img {
     min-width: 101px;
-    max-height: 131px;
+    height: 131px;
     margin-right: 15px;
+    @media screen and (max-width: 768px) {
+      margin-right: 2px;
+      min-width: 126px;
+      height: 126px;
+    }
   }
 `;
 
@@ -85,19 +93,20 @@ export const ProductDescription = styled.div`
       font-size: 28px;
       line-height: 34px;
       color: #abb1bb;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
     & p {
       font-weight: normal;
       font-size: 12px;
       line-height: 15px;
-      margin-bottom: 21px;
+      margin-bottom: 14px;
     }
   }
   & p {
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
+    margin-bottom: 0px;
   }
 `;
 

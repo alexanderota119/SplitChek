@@ -35,12 +35,12 @@ const RecommendSection: React.FC = () => {
   return (
     <RecommendSectionArea>
       <RecommendTitle>
-        <h1>
+        <h3>
           <FormattedMessage
             id="recommendproducts.header"
             defaultMessage="Recomended products:"
           ></FormattedMessage>
-        </h1>
+        </h3>
       </RecommendTitle>
       <RecommendSliderContainer>
         <CustomSlider settings={settings} arrowPosition="-0px">

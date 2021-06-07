@@ -21,9 +21,15 @@ export const CardContainer = styled.div`
 
 export const CarsouelContainer = styled.div`
   margin-bottom: 20px;
+
   & .imgArea {
-    width: 100%;
+    display: block !important;
+    margin: 0 auto;
+    max-width: 305px;
+    height: 169px;
     & img {
+      max-width: 305px;
+      height: 169px;
       width: 100%;
     }
   }
@@ -32,6 +38,8 @@ export const CarsouelContainer = styled.div`
 export const TitleContainer = styled.div`
   & h5 {
     margin-bottom: 20px;
+    color: #140a01;
+    font-weight: bold;
   }
 `;
 
@@ -51,7 +59,12 @@ export const PriceContainer = styled.div`
       font-size: 20px;
       line-height: 24px;
       text-transform: uppercase;
+      margin-bottom: 0px;
     }
+  }
+  & p {
+    margin-bottom: 0px;
+    font-size: 12px;
   }
 `;
 export const ReactionArea = styled.div`
@@ -87,6 +100,10 @@ export const CommentText = styled.div`
 
 export const ShipsFromText = styled.div`
   margin-bottom: 20px;
+  & p {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
 `;
 
 export const DescriptionContainer = styled.div`
@@ -94,6 +111,7 @@ export const DescriptionContainer = styled.div`
   & p {
     font-size: 14px;
     line-height: 140%;
+    margin-bottom: 0px;
   }
 `;
 
@@ -106,7 +124,8 @@ export const TagGroupContainer = styled.div`
     padding: 9px;
     font-size: 11px;
     margin-right: 2px;
-    margin-top: 6px;
+    margin-top: 2px;
+    border-radius: 8px;
   }
 `;
 

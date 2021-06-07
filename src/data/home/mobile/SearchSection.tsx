@@ -45,15 +45,4 @@ export const data = [
     description:
       "Do you want a clearer skin? Then you found the right product. The solution is salycylic acid, glycolic acid and white willow bark...",
   },
-  {
-    type: "percent",
-    src: percentImage,
-    comments: 56,
-    discounts: "02.02.2022",
-    soldBy: "Rekisa",
-    shipsFrom: "Queensland- Australia",
-    title: "Goss title",
-    description:
-      "To help your skin thrive, use Moroccan argan extract which conditions and moisturizes while chlorella brings a boost of skin-benefiting vitamins and omega 3s for extra glowing goodness",
-  },
 ];

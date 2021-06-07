@@ -11,12 +11,12 @@ import { data, MobileData } from "data/home/desktop/SponsoredSection";
 const SponsoredCardSection: React.FC = () => {
   return (
     <SponsoredSectionArea>
-      <h2>
+      <h3>
         <FormattedMessage
           id="sponsored.header"
           defaultMessage="Sponsored:"
         ></FormattedMessage>
-      </h2>
+      </h3>
       <CardContainer>
         {MobileData.map((item, key) => {
           return <SponsordCard key={key} list={item}></SponsordCard>;

@@ -14,7 +14,7 @@ const BargainContainer = styled.div`
   flex-direction: column;
   margin-bottom: 62px;
   & h4 {
-    color: "#140A01";
+    color: #140a01;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 38px;

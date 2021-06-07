@@ -30,14 +30,16 @@ export const ImageContainer = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    & .imgSection1 {
-      margin-right: -12px;
+    & .imageSection1 {
+      z-index: 2;
       & img {
         min-width: 32px;
         height: 32px;
       }
     }
     & .imageSection2 {
+      margin-left: -15px;
+      z-index: 1;
       & img {
         min-width: 48px;
         height: 48px;
@@ -152,6 +154,8 @@ export const PriceContainer = styled.div`
       display: flex;
       flex-direction: row;
       margin-bottom: 3px;
+      justify-content: center;
+      align-items: center;
 
       & p {
         font-weight: 500;

@@ -29,6 +29,8 @@ const Searchflex = styled.div`
     height: 50px;
     padding-left: 24px;
     padding-top: 15x;
+    display: flex;
+    flex: 1;
   }
   & .mobile {
     max-width: 100px;
@@ -57,7 +59,8 @@ const Searchflex = styled.div`
     padding-left: 19px;
     width: 100%;
     & .mobile {
-      display: block;
+      display: flex;
+      flex: 1;
     }
     & .desktop {
       display: none;
