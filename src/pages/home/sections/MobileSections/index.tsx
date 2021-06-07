@@ -27,7 +27,10 @@ const MobileSections = () => {
 
       <SearchContainer>
         <h3>
-          <FormattedMessage id="searchresult" />
+          <FormattedMessage
+            id="searchresult"
+            defaultMessage="About 45,800,000 results (0.88 seconds) shopping on behalf of David Oabile"
+          />
         </h3>
       </SearchContainer>
       <SponsoredCardSection></SponsoredCardSection>

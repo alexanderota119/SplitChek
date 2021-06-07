@@ -18,10 +18,16 @@ const RcdCarsouelCard: React.FC<Props> = ({ list }) => {
           </Card.ProductImageContainer>
           <Card.AuthorContainer>
             <ColorText color="gray.product">
-              <FormattedMessage id="recommend.dave"></FormattedMessage>
+              <FormattedMessage
+                id="recommend.dave"
+                defaultMessage="Perfect gift for"
+              ></FormattedMessage>
             </ColorText>{" "}
             <ColorText>
-              <FormattedMessage id="recommend.name"></FormattedMessage>
+              <FormattedMessage
+                id="recommend.name"
+                defaultMessage="Dave Smith"
+              ></FormattedMessage>
             </ColorText>
           </Card.AuthorContainer>
         </Card.ProductContainer>
@@ -35,7 +41,10 @@ const RcdCarsouelCard: React.FC<Props> = ({ list }) => {
           <Card.DescriptionFooter>
             <img src={list.avatar}></img>
             <Button size="vbig" variant="orange">
-              Open
+              <FormattedMessage
+                id="recommend.open"
+                defaultMessage="open"
+              ></FormattedMessage>
             </Button>
           </Card.DescriptionFooter>
         </Card.DescriptionContainer>

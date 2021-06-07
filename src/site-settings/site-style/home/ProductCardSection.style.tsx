@@ -124,3 +124,36 @@ export const DotContainer5 = styled.div`
     display: none;
   }
 `;
+
+export const LineContainer = styled.div`
+  position: absolute;
+  right: -240px;
+  top: 250px;
+  z-index: -1;
+  & img {
+    min-width: 420px;
+    height: 42px;
+  }
+`;
+
+export const CircleContainer6 = styled.div`
+  position: absolute;
+  right: -560px;
+  top: 550px;
+  z-index: 11;
+  @media screen and (max-width: 1399px) {
+    right: -200px;
+    top: 550px;
+  }
+`;
+
+export const DotContainer6 = styled.div`
+  position: absolute;
+  left: -140px;
+  top: -330px;
+  z-index: 11;
+  & img {
+    min-width: 178px;
+    height: 260px;
+  }
+`;

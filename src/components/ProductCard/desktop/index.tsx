@@ -6,6 +6,7 @@ import ellipse137 from "assets/images/home/ellipse137.png";
 
 import Reaction from "components/Reaction/index";
 import * as ProductPlane from "./index.styled";
+import { FormattedMessage } from "react-intl";
 
 type Props = {
   list;
@@ -55,13 +56,25 @@ const ProductCard: React.FC<Props> = ({ list }) => {
         <ProductPlane.DescriptionFooter>
           <ProductPlane.FooterBody>
             <p>
-              <b>Sold by: </b>
+              <b>
+                <FormattedMessage
+                  id="soldby"
+                  defaultMessage="Sold by"
+                ></FormattedMessage>
+                {": "}
+              </b>
               {list.soldBy}
             </p>
           </ProductPlane.FooterBody>
           <ProductPlane.FooterBody>
             <p>
-              <b>Shops From: </b> {list.shipsFrom}
+              <b>
+                <FormattedMessage
+                  id="shopsfrom"
+                  defaultMessage="Shops From:"
+                ></FormattedMessage>{" "}
+              </b>
+              {list.shipsFrom}
             </p>
           </ProductPlane.FooterBody>
         </ProductPlane.DescriptionFooter>
@@ -82,7 +95,10 @@ const ProductCard: React.FC<Props> = ({ list }) => {
           )}
         </ProductPlane.PriceContainer>
         <Button size="vbig" variant="orange">
-          Open
+          <FormattedMessage
+            id="recommend.open"
+            defaultMessage="Perfect gift for"
+          ></FormattedMessage>
         </Button>
       </ProductPlane.CommentContainer>
     </ProductPlane.ProductCardContainer>

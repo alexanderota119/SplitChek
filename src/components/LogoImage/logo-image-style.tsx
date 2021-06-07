@@ -8,8 +8,8 @@ export const LogoBox = styled.span<LogoBoxProps>`
   margin: 0 20 40;
   display: flex;
   alignitems: center;
-  min-width: 123px;
-  min-height: 22px;
+  min-width: 175px;
+  min-height: 31px;
   @media screen and (max-width: 768px) {
     min-width: 35px;
     min-height: 30px;

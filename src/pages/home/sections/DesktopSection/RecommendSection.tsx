@@ -2,13 +2,18 @@ import {
   RecommendSectionArea,
   RecommendSliderContainer,
   RecommendTitle,
+  LineContainer,
 } from "site-settings/site-style/home/RecommendSection.style";
 
 import CustomSlider from "components/Slider/index";
 import RcdCarsouelCard from "components/RcdCarsouelCard/index";
 
+import BargainCard from "components/BargainCard/index";
+
 import { data } from "data/home/desktop/RecommendSection";
 import { FormattedMessage } from "react-intl";
+
+import linesvg from "assets/images/home/line.svg";
 
 const settings = {
   dots: false,
@@ -44,6 +49,9 @@ const RecommendSection: React.FC = () => {
           })}
         </CustomSlider>
       </RecommendSliderContainer>
+      <LineContainer>
+        <img src={linesvg} />
+      </LineContainer>
     </RecommendSectionArea>
   );
 };

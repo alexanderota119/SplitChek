@@ -3,6 +3,7 @@ import ProductCardSection from "../DesktopSection/ProductCardSection";
 import RecommendSection from "../DesktopSection/RecommendSection";
 import SponsoredCardSection from "../DesktopSection/SponsoredSection";
 import RecommendProductSection from "../DesktopSection/RecommendProductSection";
+import BargainSection from "../DesktopSection/BargainSection";
 //! components
 import RcdProductCard from "components/RcdProductCard/desktop/";
 
@@ -60,6 +61,7 @@ const DesktopSection = () => {
         <ProductSectionContainer>
           <ProductCardSection />
           <RecommendSection />
+          <BargainSection></BargainSection>
           <RcdProductCard list={list} />
           <RecommendProductSection />
         </ProductSectionContainer>
