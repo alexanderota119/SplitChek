@@ -28,7 +28,9 @@ const CardContainer = styled.div`
   overflow-x: scroll;
 `;
 
-const BargainSliderContainer = styled.div``;
+const BargainSliderContainer = styled.div`
+  padding: 20px;
+`;
 
 const data = [
   {
@@ -124,7 +126,12 @@ const BargainSection = ({ mobile = false }) => {
             })}
           </CardContainer>
         ) : (
-          <CustomSlider settings={settings} arrowPosition="-10px">
+          <CustomSlider
+            settings={settings}
+            arrowPosition="-10px"
+            arrowTopPosition="35px"
+            hide={true}
+          >
             {data.map((item, key) => {
               return <BargainCard key={key} item={item}></BargainCard>;
             })}

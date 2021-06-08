@@ -16,4 +16,5 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 30px;
 `;

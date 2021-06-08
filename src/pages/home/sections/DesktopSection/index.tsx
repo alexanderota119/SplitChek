@@ -65,7 +65,7 @@ const DesktopSection = () => {
           <RcdProductCard list={list} />
           <RecommendProductSection />
         </ProductSectionContainer>
-        <SponsoredCardSection></SponsoredCardSection>
+        <SponsoredCardSection mobile={false}></SponsoredCardSection>
       </SectionContainer>
       <SponsoredBottomSlider></SponsoredBottomSlider>
     </>

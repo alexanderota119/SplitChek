@@ -18,7 +18,7 @@ const CarsouelSection = ({ mobile = false, setting }) => {
   return (
     <CarsouleArea>
       {!mobile ? (
-        <CustomSlider settings={setting} arrowPosition={"-10px"}>
+        <CustomSlider settings={setting} arrowPosition={"-10px"} hide={true}>
           {data.map((item, key) => {
             return (
               <CarsouelCell

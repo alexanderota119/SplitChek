@@ -2,13 +2,16 @@ import styled from "styled-components";
 import { HiOutlineChevronDoubleLeft } from "react-icons/hi";
 type ArrowPosition = {
   arrowPosition: string;
+  arrowTopPosition: string;
+  hide: boolean;
 };
 const ArrowContainer = styled.div<ArrowPosition>`
   position: absolute;
   left: calc(-5px + ${(props) => props.arrowPosition});
-  top: calc(50% - 16px);
+  top: calc(50% - ${(props) => props.arrowTopPosition});
   border-radius: 50%;
   background-color: white;
+  visibility: ${(props) => (props.hide == true ? "hidden" : "visible")};
   width: 32px;
   height: 32px;
   display: flex;
@@ -29,8 +32,25 @@ const ArrowContainer = styled.div<ArrowPosition>`
 `;
 
 const PrevArrow = (props) => {
+  let flagToPosition = false;
+  //it means that move the default action.
+  if (props.hide == false) {
+    flagToPosition = false;
+  } //it means that do the arrow show and hiddden mode.
+  else {
+    if (props.currentSlide > 0) {
+      flagToPosition = false;
+    } else {
+      flagToPosition = true;
+    }
+  }
   return (
-    <ArrowContainer onClick={props.onClick} arrowPosition={props.arrowPosition}>
+    <ArrowContainer
+      onClick={props.onClick}
+      arrowPosition={props.arrowPosition}
+      arrowTopPosition={props.arrowTopPosition}
+      hide={flagToPosition}
+    >
       <HiOutlineChevronDoubleLeft color="#ABB1BB" />
     </ArrowContainer>
   );

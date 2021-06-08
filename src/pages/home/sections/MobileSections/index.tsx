@@ -34,7 +34,7 @@ const MobileSections = () => {
           />
         </h3>
       </SearchContainer>
-      <SponsoredCardSection></SponsoredCardSection>
+      <SponsoredCardSection mobile={true}></SponsoredCardSection>
       <SearchSection></SearchSection>
       <RecommendSection></RecommendSection>
       <BargainSection mobile={true}></BargainSection>

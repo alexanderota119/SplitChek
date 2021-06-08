@@ -40,7 +40,7 @@ export const CircleContainer1 = styled.div`
 export const CircleContainer2 = styled.div`
   position: absolute;
   left: -35px;
-  top: 700px;
+  top: 600px;
   z-index: -1;
   @media screen and (max-width: 998px) {
     top: 800px;
@@ -62,7 +62,7 @@ export const CircleContainer2 = styled.div`
 export const CircleContainer3 = styled.div`
   position: absolute;
   right: -30px;
-  top: 740px;
+  top: 680px;
   z-index: -1;
   @media screen and (max-width: 1011px) {
     top: 810px;
@@ -160,5 +160,27 @@ export const DotContainer6 = styled.div`
   & img {
     min-width: 178px;
     height: 260px;
+  }
+`;
+
+export const CircleContainer7 = styled.div`
+  position: absolute;
+  right: -150px;
+  top: 780px;
+  z-index: -1;
+  @media screen and (max-width: 1399px) {
+    right: -90px;
+  }
+  @media screen and (max-width: 1009px) {
+    top: 900px;
+  }
+  @media screen and (max-width: 925px) {
+    top: 1000px;
+  }
+  @media screen and (max-width: 802px) {
+    top: 1200px;
+  }
+  @media screen and (max-width: 809px) {
+    top: 1210px;
   }
 `;

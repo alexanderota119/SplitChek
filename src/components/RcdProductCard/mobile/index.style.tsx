@@ -12,6 +12,7 @@ export const CardWrapper = styled.div`
   @media screen and (max-width: 460px) {
     padding: 20px;
   }
+  margin-bottom: 30px;
 `;
 
 export const CardContainer = styled.div`

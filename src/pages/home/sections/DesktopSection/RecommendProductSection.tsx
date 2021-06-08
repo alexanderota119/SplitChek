@@ -5,6 +5,7 @@ import {
   LineContainer,
   CircleContainer6,
   DotContainer6,
+  CircleContainer7,
 } from "site-settings/site-style/home/ProductCardSection.style";
 import { data } from "data/home/desktop/RecommendProductSection";
 
@@ -24,6 +25,9 @@ const RecommendProductSection: React.FC = () => {
       <DotContainer6>
         <img src={dotSvg} />
       </DotContainer6>
+      <CircleContainer7>
+        <Circle color="rgba(253, 189, 161, 0.1)" diameter="276px"></Circle>
+      </CircleContainer7>
       {data.map((item, key) => {
         return item.type == "product" ? (
           <ProductCard key={key} list={item}></ProductCard>

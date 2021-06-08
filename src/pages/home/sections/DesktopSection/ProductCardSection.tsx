@@ -18,7 +18,7 @@ import Circle from "components/Circle";
 
 import dotGroup from "assets/images/home/dotGroup.svg";
 
-const ProductCardSection: React.FC = () => {
+const ProductCardSection = () => {
   return (
     <ProductSectionContainer>
       <h3>

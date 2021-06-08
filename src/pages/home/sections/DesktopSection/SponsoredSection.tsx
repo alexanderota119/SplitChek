@@ -3,12 +3,18 @@ import SponsordCard from "components/SponsoredCard/";
 import {
   CardContainer,
   SponsoredSectionArea,
+  CircleContainer,
 } from "site-settings/site-style/home/SponsoredSection.style";
 
 import { FormattedMessage, useIntl } from "react-intl";
 
 import { data, MobileData } from "data/home/desktop/SponsoredSection";
-const SponsoredCardSection: React.FC = () => {
+import Circle from "components/Circle";
+const SponsoredCardSection = ({ mobile = false }) => {
+  let temp = data;
+  if (mobile) {
+    temp = data.slice(0, 2);
+  }
   return (
     <SponsoredSectionArea>
       <h3>
@@ -18,10 +24,13 @@ const SponsoredCardSection: React.FC = () => {
         ></FormattedMessage>
       </h3>
       <CardContainer>
-        {MobileData.map((item, key) => {
+        {temp.map((item, key) => {
           return <SponsordCard key={key} list={item}></SponsordCard>;
         })}
       </CardContainer>
+      <CircleContainer>
+        <Circle color="rgba(192, 179, 179, 0.15)" diameter="76px"></Circle>
+      </CircleContainer>
     </SponsoredSectionArea>
   );
 };

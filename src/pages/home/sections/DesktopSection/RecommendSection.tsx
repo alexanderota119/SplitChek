@@ -43,7 +43,7 @@ const RecommendSection: React.FC = () => {
         </h3>
       </RecommendTitle>
       <RecommendSliderContainer>
-        <CustomSlider settings={settings} arrowPosition="-0px">
+        <CustomSlider settings={settings} arrowPosition="-0px" hide={true}>
           {data.map((item, key) => {
             return <RcdCarsouelCard list={item} key={key}></RcdCarsouelCard>;
           })}
